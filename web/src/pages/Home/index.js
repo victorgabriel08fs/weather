@@ -18,7 +18,7 @@ const Home = () => {
             }
         });
         setWeather(res.data);
-        console.log(res.data)
+        console.log(res.data);
     }
 
     useEffect(() => {
@@ -35,6 +35,17 @@ const Home = () => {
             </Fragment>
         );
     }
+
+    else if (weather === false) {
+        return (
+            <Fragment>
+                <h2>
+                    Carregando o clima...
+                </h2>
+            </Fragment>
+        )
+    }
+
     else {
         return (
             <Fragment>
@@ -46,11 +57,11 @@ const Home = () => {
                             <div className="content">
                                 <div className="subtitle">
                                     <img width='60px' height='auto' src={` http://openweathermap.org/img/wn/${weather['weather'][0]['icon']}.png`} alt="" />
-                                    <h3 className={`${weather['weather'][0]['description']}`}>{weather['weather'][0]['description'].toUpperCase()}</h3>
+                                    <h3>{weather['weather'][0]['description'].toUpperCase()}</h3>
                                 </div>
                             </div>
                             <div className="datas">
-                                <p>Temperatura atual </p><strong>{weather['main']['temp']}°C</strong>
+                                <p>Temperatura atual: </p><strong>{weather['main']['temp']}°C</strong>
                                 <p>Sensação térmica: </p><strong>{weather['main']['feels_like']}°C</strong>
                                 <p>Temperatura máxima: </p><strong>{weather['main']['temp_max']}°C</strong>
                                 <p>Temperatura mínima: </p><strong>{weather['main']['temp_min']}°C</strong>
