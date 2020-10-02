@@ -35,15 +35,6 @@ const Home = () => {
             </Fragment>
         );
     }
-    else if (weather === false) {
-        return (
-            <Fragment>
-                <div className="loading">
-                    <img className="loading-img" width="400px" src="https://createwebsite.net/wp-content/uploads/2015/09/Display-Loading.gif" alt="" />
-                </div>
-            </Fragment>
-        );
-    }
     else {
         return (
             <Fragment>
