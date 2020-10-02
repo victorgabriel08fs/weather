@@ -21,7 +21,6 @@ export default function App() {
       }
     });
     setWeather(res.data);
-    console.log(res.data);
   }
 
 
@@ -41,7 +40,6 @@ export default function App() {
       }
     }
     loadInitialPosition();
-    console.log(currentRegion.latitude, currentRegion.longitude);
   }, []);
 
   if (location) {

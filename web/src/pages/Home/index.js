@@ -18,7 +18,6 @@ const Home = () => {
             }
         });
         setWeather(res.data);
-        console.log(res.data);
     }
 
     useEffect(() => {
@@ -56,7 +55,7 @@ const Home = () => {
                         <div className="p">
                             <div className="content">
                                 <div className="subtitle">
-                                    <img width='60px' height='auto' src={` http://openweathermap.org/img/wn/${weather['weather'][0]['icon']}.png`} alt="" />
+                                    <img width='60px' height='auto' src={`https://openweathermap.org/img/wn/${weather['weather'][0]['icon']}.png`} alt="" />
                                     <h3>{weather['weather'][0]['description'].toUpperCase()}</h3>
                                 </div>
                             </div>
