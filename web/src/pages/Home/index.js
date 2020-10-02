@@ -50,7 +50,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="datas">
-                                <p>Temperatura atual: </p><strong>{weather['main']['temp']}°C</strong>
+                                <p>Temperatura atual </p><strong>{weather['main']['temp']}°C</strong>
                                 <p>Sensação térmica: </p><strong>{weather['main']['feels_like']}°C</strong>
                                 <p>Temperatura máxima: </p><strong>{weather['main']['temp_max']}°C</strong>
                                 <p>Temperatura mínima: </p><strong>{weather['main']['temp_min']}°C</strong>
