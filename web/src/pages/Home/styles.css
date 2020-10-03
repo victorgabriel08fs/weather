@@ -25,18 +25,14 @@ code {
     flex-direction: row;
 }
 
-
 h3 {
     font-size: 18px;
     color: #fff;
-
 }
 
-img{
+img {
     margin-left: 150px;
 }
-
-
 
 .container {
     margin-top: -100px;
@@ -49,17 +45,38 @@ img{
     margin-left: -150px;
 }
 
-
-
-h1{
+h1 {
     margin-left: 100px;
 }
 
-p{
+p {
     max-width: 300px;
     margin: 0 15px
 }
 
-.nuvensdispersas{
+.nuvensdispersas {
     color: blue;
+}
+
+@media(max-width:375px) {
+    .datas {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    .content {
+        display: flex;
+        justify-content: left;
+    }
+    .subtitle {
+        display: flex;
+        justify-content: left;
+    }
 }
